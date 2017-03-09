@@ -13,18 +13,20 @@
     <p>Vive le Jquery!</p>
   </form>
   <script>
-  $(function() {                      //declare la fction
-    var number = 0;                   // declaration d'une variable = a zero
-    $("#button1").click(function(){  // appel du bouton , et evenement click
-      number ++;                    // la var augmente a chaque clic
-    $("p").text(number);            // appel du paragraphe et de la var
-  });
-    var number = 0;
-    $("#button2").click(function(){
-      number --;                 // la var diminue a chaque clic
-      $("p").text(number);
-    })
-  });
+  $(document).ready(function(){
+    $(function() {                      //declare la fction
+      var number = 0;                   // declaration d'une variable = a zero
+      $("#button1").click(function(){  // appel du bouton , et evenement click
+        number ++;                    // la var augmente a chaque clic
+        $("p").text(number);            // appel du paragraphe et de la var
+      });
+      var number = 0;
+      $("#button2").click(function(){
+        number --;                 // la var diminue a chaque clic
+        $("p").text(number);
+      });
+    });
+  })
 
   </script>
 </body>
